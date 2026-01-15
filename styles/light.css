@@ -17,6 +17,10 @@
   --main-text-color:  #353430;
 }
 
+.theme-light .page {
+  background-color: initial;
+}
+
 .theme-light .header__theme-menu-button:hover {
   border: 1px solid #32312D66;
 }
@@ -33,6 +37,10 @@
     --decor-color: #353430;
     --contrast-color: #353430;
     --main-text-color:  #353430;
+  }
+
+  .theme-light .page {
+    background-color: initial;
   }
 
   .theme-light .header__theme-menu-button:hover {

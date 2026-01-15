@@ -5,7 +5,7 @@
 */
 
 :root.theme-dark {
-  --background-image: url("../images/cover-image.png");
+  --background-image: url("../images/cover-image-dark.png");
   --decor-color: #ff0070;
   --accent-color: #ff0070;
   --logo-color: #DB00FF;
