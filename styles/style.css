@@ -83,12 +83,14 @@
   font-weight: bold;
   font-size: 18px;
   width: max(355px, 48vw);
+  line-height: 23.4px;
 }
 
 .main {
   color: var(--main-text-color);
   font-size: 18px;
   margin: var(--main-margin) var(--main-gap);
+  line-height: 23.4px;
 }
 
 .main__section {
@@ -172,7 +174,7 @@ h4.main__card-title {
 
 .footer__logo {
   color: var(--logo-color);
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 2px 2px 0 var(--accent-color);
   margin: auto;
 }
@@ -247,6 +249,10 @@ h4.main__card-title {
 
   .gallery_image:last-of-type {
     grid-column: span 2;
+  }
+
+  .footer__logo {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
