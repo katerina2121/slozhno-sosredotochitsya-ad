@@ -30,7 +30,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root.theme-auto {
     --background-image: url("../images/cover-image-light.png");
     --accent-color: #FF8DCB;
     --logo-color: #FFC2E6;
@@ -39,15 +39,15 @@
     --main-text-color:  #353430;
   }
 
-  .theme-light .page {
+  .theme-auto .page {
     background-color: initial;
   }
 
-  .theme-light .header__theme-menu-button:hover {
+  .theme-auto .header__theme-menu-button:hover {
     border: 1px solid #32312D66;
   }
 
-  .theme-light .header__rec {
+  .theme-auto .header__rec {
     display: none;
   }
 }
