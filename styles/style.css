@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding: 0px var(--main-gap);
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
@@ -12,7 +11,7 @@
   block-size: 100vh;
   min-block-size: 668px;
   position: relative;
-  padding-block-start: var(--main-gap);
+  padding: var(--main-gap) var(--main-gap) 0px 10px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
@@ -87,6 +86,8 @@
 .main {
   color: var(--main-text-color);
   font-size: 18px;
+  margin: var(--main-margin) 0;
+  padding: 0px var(--main-gap);
 }
 
 .main__section {
@@ -169,6 +170,7 @@ h4.main__card-title {
 
 .footer__logo {
   color: var(--logo-color);
+  line-height: 83%;
   font-size: 116px;
   text-shadow: 2px 2px 0 var(--accent-color);
   margin: auto;
