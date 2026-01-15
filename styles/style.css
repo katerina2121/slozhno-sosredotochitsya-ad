@@ -11,7 +11,8 @@
   block-size: 100vh;
   min-block-size: 668px;
   position: relative;
-  padding: var(--main-gap) var(--main-gap) 0px 10px;
+  padding-block-start: var(--main-gap);
+  margin: 0 var(--main-gap);
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
@@ -86,8 +87,7 @@
 .main {
   color: var(--main-text-color);
   font-size: 18px;
-  margin: var(--main-margin) 0;
-  padding: 0px var(--main-gap);
+  margin: var(--main-margin) var(--main-margin);
 }
 
 .main__section {
@@ -146,6 +146,7 @@ h4.main__card-title {
   display: flex;
   position: relative;
   min-block-size: 668px;
+  margin: 0 var(--main-gap);
 }
 
 .decorated-zone::before {
@@ -170,7 +171,6 @@ h4.main__card-title {
 
 .footer__logo {
   color: var(--logo-color);
-  line-height: 83%;
   font-size: 116px;
   text-shadow: 2px 2px 0 var(--accent-color);
   margin: auto;
@@ -179,6 +179,11 @@ h4.main__card-title {
 @media (width >= 768px) {
   .header__logo {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -10px;
+  }
+  
+  .main__section {
+    margin-block-end: 80px;
   }
 
   .why {
